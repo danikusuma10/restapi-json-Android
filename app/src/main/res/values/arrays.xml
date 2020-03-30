@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sekolah">
+        <item>SEKOLAH TINGGI ILMU KOMPUTER YOS SUDARSO</item>
+        <item>AMIKOM PURWOKERTO</item>
+        <item>UNIVERSITAS NAHDLATUL ULAMA</item>
+        <item>UNIVERSITAS JENDRAL SOEDIRMAN</item>
+        <item>UNIVERSITAS MUHAMMADIYAH PURWOKERTO</item>
+        <item>UNIVERSITAS TERBUKA</item>
+        <item>STT TELKOM</item>
+    </string-array>
+</resources>

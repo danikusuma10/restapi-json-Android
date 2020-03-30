@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".input_pengguna">
+
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@color/colorGreen">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/login1"
+        android:layout_below="@+id/login1"
+       android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf">
+
+    </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/fullnamesignup1"
+            android:drawableEnd="@drawable/btnsignup"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:hint="full name"
+            android:autofillHints="Full Name"
+            android:background="@color/colorWhite"
+            tools:ignore="HardcodedText">
+        </EditText>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/fullnamesignup1"
+        android:id="@+id/action_divider"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray"
+
+        >
+
+
+    </View>
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

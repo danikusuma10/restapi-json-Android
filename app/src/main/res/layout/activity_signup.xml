@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#210E0E"
+    tools:context=".SignupActivity">
+
+
+    <ImageView
+        android:id="@+id/spin_sekolah"
+        android:layout_width="144dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="4"
+        android:background="@drawable/logo"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fullnamesignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_sekolah" />
+
+    <EditText
+        android:id="@+id/fullnamesignup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Fullname"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textColorHint="#eee"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernamelogin"
+        app:layout_constraintEnd_toEndOf="@+id/usernamelogin"
+        app:layout_constraintStart_toStartOf="@+id/usernamelogin"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/usernamelogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Username"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textColorHint="#eee"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/fullnamesignup" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Email"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textColorHint="#eee"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordsignup"
+        app:layout_constraintEnd_toEndOf="@+id/passwordsignup"
+        app:layout_constraintStart_toStartOf="@+id/passwordsignup"
+        app:layout_constraintTop_toBottomOf="@+id/usernamelogin" />
+
+    <EditText
+        android:id="@+id/passwordsignup"
+        android:layout_width="315dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textColorHint="#eee"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/konfpasswordsignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/konfpasswordsignup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Confirmation Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textColorHint="#eee"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_sekolah"
+        app:layout_constraintEnd_toEndOf="@+id/passwordsignup"
+        app:layout_constraintStart_toStartOf="@+id/passwordsignup"
+        app:layout_constraintTop_toBottomOf="@+id/passwordsignup" />
+
+    <Spinner
+        android:id="@+id/spinner_sekolah"
+        android:layout_width="319dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_corner"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/sekolah"
+        android:spinnerMode="dropdown"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/btntoSignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/konfpasswordsignup" />
+
+    <Button
+        android:id="@+id/btntoSignup"
+        android:layout_width="116dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/rounded_corner_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toTopOf="@+id/toLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_sekolah" />
+
+    <TextView
+        android:id="@+id/toLogin"
+        android:layout_width="169dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:text="Allready Account ? SignIn"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btntoSignup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
